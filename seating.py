@@ -22,7 +22,6 @@ def build(rows, cols, reserved):
         col = int(m.group('col')) - 1
         map[row][col] = 'S'
 
-    print toStr(map)
     return map
 
 
