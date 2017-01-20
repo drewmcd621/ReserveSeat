@@ -33,7 +33,8 @@ def build(rows, cols, reserved):
         #subtract 1 to go to 0 based index
         row = int(m.group('row')) - 1
         col = int(m.group('col')) - 1
-        map[row][col] = 'S'
+        #Mark 'VIP' seats with a V (just to distinguish from the reserved seats, any single char non 0 would work)
+        map[row][col] = 'V'
 
     return map
 
@@ -97,7 +98,7 @@ def reserve(map, n):
         print "Not Avaliable"
         return map
 
-        #Record the seats that are now reserved
+    #Record the seats that are now reserved
     for i in range(bestC, bestC + n):
         map[bestR][i] = 'R'
 
