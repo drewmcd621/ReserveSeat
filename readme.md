@@ -2,6 +2,8 @@
 
 This program was designed to reserve seats for a simple theater setup where seats are arranged into a rectangle of columns and rows.
 
+[View on GitHub](https://github.com/drewmcd621/ReserveSeat)
+
 ## Requirements
 * Python 2 (Tested on Python 2.7.12)
 
@@ -35,8 +37,8 @@ Converts the map to a string representation
 returns: map (string) the string representation
 
 To read:
-0 - empty seat
-V - A seat pre-reserved by build (a **V**IP seat)
-R - A **R**eserved seat
+* 0 - empty seat
+* V - A seat pre-reserved by build (a **V**IP seat)
+* R - A **R**eserved seat
 
 The front row is at the top.
